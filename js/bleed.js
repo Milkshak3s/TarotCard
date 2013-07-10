@@ -28,7 +28,7 @@ var card22 = 'img/tav.png';
 
 var img = $('#img');
 var cardNum = 1;
-//Switch statement (passing)
+//Switch state -- card changer (passing)
 $('#changeImg').on('click', function () {
     switch (cardNum) {
         case 1:
@@ -52,23 +52,23 @@ $('#changeImg').on('click', function () {
             break;
 
         case 5:
-            img.attr('src', card5)
-            cardNum = 5;
-            break;
-
-        case 6:
             img.attr('src', card6)
             cardNum = 6;
             break;
 
-        case 7:
+        case 6:
             img.attr('src', card7)
             cardNum = 7;
             break;
 
-        case 8:
+        case 7:
             img.attr('src', card8)
             cardNum = 8;
+            break;
+
+        case 8:
+            img.attr('src', card9)
+            cardNum = 9;
             break;
 
         default:
@@ -77,4 +77,17 @@ $('#changeImg').on('click', function () {
             break;
 
     }
+})
+
+//Muti-buttons (bleed)
+$('#nameBtn1').on('click', function () {
+    
+})
+
+$('#nameBtn2').on('click', function () {
+    
+})
+
+$('#nameBtn3').on('click', function () {
+    
 })
