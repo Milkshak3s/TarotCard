@@ -1,7 +1,10 @@
 var card1 = '/img/aleph.png';
-// var card2 = 'img/beth.png';
-//var card3 = 'img/gimel.png';
-// var card4 = 'img/daleth.png'
+//Broken
+var card2 = 'img/beth.png';
+//Broken
+var card3 = 'img/gimel.png';
+//Broken
+var card4 = 'img/daleth.png'
 var card5 = 'img/heh.png';
 var card6 = 'img/vav.png'
 var card7 = 'img/zain.png';
@@ -12,29 +15,20 @@ var card11 = 'img/kaph.png';
 var card12 = 'img/lamed.png';
 var card13 = 'img/mem.png';
 var card14 = 'img/nun.png';
-//var card15 = 'img/samekh.png';
+//Broken
+var card15 = 'img/samekh.png';
 var card16 = 'img/ayin.png';
 var card17 = 'img/peh.png';
 var card18 = 'img/tzaddi.png';
 var card19 = 'img/qoph.png'
 var card20 = 'img/resh.png';
-//var card21 = 'img/shin.png';
+//Broken
+var card21 = 'img/shin.png';
 var card22 = 'img/tav.png';
 
 var img = $('#img');
 var cardNum = 1;
-$('#changeImg').on('click', function () {
-    if (cardNum == 1) {
-        $('#img').attr('src', card2);
-        cardNum = 2;
-    }
-    else {
-        $('#img').attr('src', card1)
-        cardNum = 1;
-    }
-});
-
-//Switch statement (bleed)
+//Switch statement (passing)
 $('#changeImg').on('click', function () {
     switch (cardNum) {
         case 1:
@@ -55,6 +49,26 @@ $('#changeImg').on('click', function () {
         case 4:
             img.attr('src', card5)
             cardNum = 5;
+            break;
+
+        case 5:
+            img.attr('src', card5)
+            cardNum = 5;
+            break;
+
+        case 6:
+            img.attr('src', card6)
+            cardNum = 6;
+            break;
+
+        case 7:
+            img.attr('src', card7)
+            cardNum = 7;
+            break;
+
+        case 8:
+            img.attr('src', card8)
+            cardNum = 8;
             break;
 
         default:
