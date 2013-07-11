@@ -3,3 +3,11 @@ body {
 	font-family: "Segoe UI,Helvetica";
 	font-size: em;
 }
+.roundBtn {
+	width: 33.3%;
+	height: 40px;
+	background-color: #666666;
+	padding: 20px;
+	margin: 20px;
+	display: inline;
+}
