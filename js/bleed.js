@@ -52,7 +52,7 @@ var score = 0;
 btn1.css('backgroundColor', '#777777');
 
 //Switch state -- card changer (bleed // unfinished)
-$('#changeImg').on('click', function () {
+$('#nextImg').on('click', function () {
     if (selectedBtn == correctAns) {
         if (cardNum < 9) {
             score++;
@@ -64,7 +64,7 @@ $('#changeImg').on('click', function () {
             img.attr('src', card2)
             cardNum = 2;
             btn1.html('OptionOne');
-            btn2.html('OptionTwo');
+            btn2.html('Ox');
             btn3.html('OptionThree');
             correctAns = 2;
             break;
@@ -134,19 +134,6 @@ $('#changeImg').on('click', function () {
             break;
 
     }
-});
-
-//Muti-buttons [on-hover] (non-func)
-$('#nameBtn1').on('hover', function () {
-    
-});
-
-$('#nameBtn2').on('hover', function () {
-
-});
-
-$('#nameBtn3').on('hover', function () {
-
 });
 
 //Muti-buttons [on-click] (passing)
