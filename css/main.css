@@ -10,8 +10,19 @@ body {
 	padding: 20px;
 	margin: 20px;
 	display: inline;
+	border-radius: 10px;
 }
 
 .whiteText {
     color: white; 
+}
+.inner {
+	width: 100px;
+	margin: 0 auto;
+}
+.content {
+	margin: auto;
+}
+#nextImg {
+	float: right;
 }
