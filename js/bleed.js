@@ -1,3 +1,17 @@
+var cardArray = ["aleph", "beth", "gimel", "daleth", "heh", "vav", 
+"zain", "cheth", "tet", "yod", "kaph", "lamed", "mem", "nun", "samekh", "ayin", "peh", "tzaddi",
+"qoph", "resh", "shin", "tav"];
+var meaningArray = ["ox", "house", "camel", "door", "window", "nail", "sword", "fence", "snake",
+"hand", "fist", "ox-goad", "water", "fish", "prop", "eye", "mouth", "fishhook", "back of head", "head", 
+"tooth", "tau"];
+
+/* for (var i=0; i<cardArray.length; i++) {
+	console.log(cardArray[i]);
+	console.log(meaningArray[i]);
+}
+*/
+
+
 var card1 = '/img/aleph.png';
 //Broken
     var card2 = 'img/beth.png';
