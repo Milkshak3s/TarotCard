@@ -135,7 +135,7 @@ $('#nameBtn3').on('hover', function () {
 
 });
 
-//Muti-buttons [on-click] (not passing)
+//Muti-buttons [on-click] (passing)
 $('#nameBtn1').on('click', function () {
     selectedBtn = 1;
     $(this).css('backgroundColor', '#777777');
