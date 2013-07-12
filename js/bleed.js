@@ -33,15 +33,18 @@ var btn3 = $('#nameBtn3');
 var cardNum = 1;
 var correctAns;
 var selectedBtn = 1;
-var score;
+var score = 0;
 
 btn1.css('backgroundColor', '#777777');
 
 //Switch state -- card changer (bleed // unfinished)
 $('#changeImg').on('click', function () {
     if (selectedBtn == correctAns) {
-        score++;
+        if (cardNum < 9) {
+            score++;
+        }
     }
+    $('#score').html(score + '/8')
     switch (cardNum) {
         case 1:
             img.attr('src', card2)
@@ -110,11 +113,10 @@ $('#changeImg').on('click', function () {
             break;
 
         default:
-            img.attr('src', card1)
-            cardNum = 1;
-            btn1.html('OptionOne');
-            btn2.html('OptionTwo');
-            btn3.html('OptionThree');
+            btn1.html('---');
+            btn2.html('---');
+            btn3.html('---');
+            $('#score').css('font-size', 'large')
             break;
 
     }

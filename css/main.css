@@ -2,6 +2,7 @@ body {
 	background-color: black;
 	font-family: "Segoe UI,Helvetica";
 }
+
 .roundBtn {
 	width: 33.3%;
 	height: 40px;
@@ -9,4 +10,8 @@ body {
 	padding: 20px;
 	margin: 20px;
 	display: inline;
+}
+
+.whiteText {
+    color: white; 
 }
