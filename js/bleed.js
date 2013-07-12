@@ -31,8 +31,17 @@ var btn1 = $('#nameBtn1');
 var btn2 = $('#nameBtn2');
 var btn3 = $('#nameBtn3');
 var cardNum = 1;
+var correctAns;
+var selectedBtn = 1;
+var score;
+
+btn1.css('backgroundColor', '#777777');
+
 //Switch state -- card changer (bleed // unfinished)
 $('#changeImg').on('click', function () {
+    if (selectedBtn == correctAns) {
+        score++;
+    }
     switch (cardNum) {
         case 1:
             img.attr('src', card2)
@@ -40,6 +49,7 @@ $('#changeImg').on('click', function () {
             btn1.html('OptionOne');
             btn2.html('OptionTwo');
             btn3.html('OptionThree');
+            correctAns = 2;
             break;
 
         case 2:
@@ -48,6 +58,7 @@ $('#changeImg').on('click', function () {
             btn1.html('OptionOne');
             btn2.html('OptionTwo');
             btn3.html('OptionThree');
+            correctAns = 1;
             break;
 
         case 3:
@@ -111,7 +122,7 @@ $('#changeImg').on('click', function () {
 
 //Muti-buttons [on-hover] (non-func)
 $('#nameBtn1').on('hover', function () {
-
+    
 });
 
 $('#nameBtn2').on('hover', function () {
@@ -124,28 +135,22 @@ $('#nameBtn3').on('hover', function () {
 
 //Muti-buttons [on-click] (not passing)
 $('#nameBtn1').on('click', function () {
-    if ($(this).css('backroundColor') == '#666666') {
-        $(this).css('backgroundColor', '#777777');
-    }
-    else {
-        $(this).css('backgroundColor', '#666666');
-    }
+    selectedBtn = 1;
+    $(this).css('backgroundColor', '#777777');
+    $('#nameBtn2').css('backgroundColor', '#666666');
+    $('#nameBtn3').css('backgroundColor', '#666666');
 });
 
 $('#nameBtn2').on('click', function () {
-    if ($(this).css('backroundColor') == '#666666') {
-        $(this).css('backgroundColor', '#777777');
-    }
-    else {
-        $(this).css('backgroundColor', '#666666');
-    }
+    selectedBtn = 2;
+    $(this).css('backgroundColor', '#777777');
+    $('#nameBtn1').css('backgroundColor', '#666666');
+    $('#nameBtn3').css('backgroundColor', '#666666');
 });
 
 $('#nameBtn3').on('click', function () {
-    if ($(this).css('backroundColor') == '#666666') {
-        $(this).css('backgroundColor', '#777777');
-    }
-    else {
-        $(this).css('backgroundColor', '#666666');
-    }
+    selectedBtn = 3;
+    $(this).css('backgroundColor', '#777777');
+    $('#nameBtn2').css('backgroundColor', '#666666');
+    $('#nameBtn1').css('backgroundColor', '#666666');
 });
